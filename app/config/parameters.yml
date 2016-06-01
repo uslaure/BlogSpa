@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: blogSpa
+    database_user: root
+    database_password: root
+    mailer_transport: mail
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 5996d6b55c5a3473a057ee7e32892f032014a4ff

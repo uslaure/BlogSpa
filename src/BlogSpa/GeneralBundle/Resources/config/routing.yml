@@ -1,0 +1,3 @@
+blog_spa_general_homepage:
+    path:     /
+    defaults: { _controller: BlogSpaGeneralBundle:Default:index }
