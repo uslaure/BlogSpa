@@ -20,6 +20,3 @@ blog_spa_general:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
-# app/config/routing.yml
-# fos_user:
-#     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
