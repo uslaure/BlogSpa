@@ -1,6 +1,8 @@
 !var/SymfonyRequirements.php 
 /vendor/ 
-/web/bundles/ 
+/web/bundles/
+app/cache/*
+app/logs/*
  
 .idea/ 
 /.idea/ 
