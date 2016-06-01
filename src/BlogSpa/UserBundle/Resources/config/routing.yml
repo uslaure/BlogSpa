@@ -1,0 +1,10 @@
+blog_spa_user_homepage:
+    path:     /
+    defaults: { _controller: BlogSpaUserBundle:Blog:homepage }
+
+BloggerBlogBundle_blog_show:
+    pattern:  /{id}
+    defaults: { _controller: BlogSpaUserBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
