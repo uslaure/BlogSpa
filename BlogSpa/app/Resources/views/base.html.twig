@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}{% endblock %} - Mon blog</title>
+        <meta name="viewport" content="width=device-width, initial-slace=1.0"></meta>
+        <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/add.css')}}">
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block nav %}{%include '::nav.html.twig'%}{% endblock %}
+        {% block body %}{%include '::bodyAcceuil.html.twig'%}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    </body>
+</html>
