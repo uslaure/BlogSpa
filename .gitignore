@@ -1,6 +1,12 @@
 !var/SymfonyRequirements.php 
 /vendor/ 
+<<<<<<< HEAD
 /web/bundles/ 
+=======
+/web/bundles/
+app/cache/*
+app/logs/*
+>>>>>>> 7c90e0a1ba012f3df72128c3a9e32ead2cd696b3
  
 .idea/ 
 /.idea/ 
@@ -10,4 +16,8 @@ tests/
 /tests/ 
 tests/* 
  
+<<<<<<< HEAD
 *~
+=======
+*~
+>>>>>>> 7c90e0a1ba012f3df72128c3a9e32ead2cd696b3

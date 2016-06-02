@@ -1,16 +1,55 @@
-.navbar-default .navbar-nav>li>a {
-	color:red;
+.navbar-default{
+	background-color:#e7631b;
+}
+
+.navbar-default .navbar-brand {
+	color: #ffffff;
+	font-size: 20px;
+}
+.navbar-default .navbar-brand:hover{
+	color: #ffffff;
 }
 .logo-spa {
 	width: 30%;
 	text-align: center;
 }
-
+.continue-reading { 
+	text-align: left;
+	color:#e7631b;
+}
+article {
+	width: 100%;
+}
+.h1-header {
+	text-transform: uppercase;
+	text-align: center;
+}
+.article-title { 
+	color: black;
+}
+.logoSPA {
+	margin-left: 400px;
+}
 .date { margin-bottom: 20px; border-bottom: 1px solid #ccc; font-size: 24px; color: #666; line-height: 30px }
-.blog { margin-bottom: 20px; }
-.blog img { width: 190px; float: left; padding: 5px; border: 1px solid #ccc; margin: 0 10px 10px 0; }
-.blog .meta { clear: left; margin-bottom: 20px; }
-.blog .snippet p.continue { margin-bottom: 0; text-align: right; }
-.blog .meta { font-style: italic; font-size: 12px; color: #666; }
-.blog .meta p { margin-bottom: 5px; line-height: 1.2em; }
-.blog img.large { width: 300px; min-height: 165px; }
+#blog { margin-bottom: 20px; }
+#blog img { width: 350px; float: left; padding: 5px; border: 1px solid #ccc; margin: 0 10px 10px 0; }
+#blog .meta { clear: left; margin-bottom: 20px; }
+#blog .snippet p.continue { margin-bottom: 0; text-align: right; }
+#blog .meta { font-style: italic; font-size: 12px; color: #666; }
+#blog .meta p { margin-bottom: 5px; line-height: 1.2em; }
+#blog img.large { width: 300px; min-height: 165px; }
+
+.footer {
+	width: 100%;
+	height: 40px;
+	background-color: #41392e;
+} 
+h3 {
+	color: #666666;
+}
+.p-footer {
+	color: #ffffff;
+	text-align: center;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
