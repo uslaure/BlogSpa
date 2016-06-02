@@ -12,7 +12,7 @@
             <img src="{{ asset(['img/', blog.image]|join) }}" />
             <div class="snippet">
                 <p>{{ blog.blog(500) }}</p>
-                <p class="continue"><a class="continue-reading "href="{{ path('BloggerBlogBundle_blog_show', { 'id': blog.id, 'slug': blog.slug }) }}">Continuer la...</a></p>
+                <p class="continue"><a class="continue-reading "href="{{ path('BloggerBlogBundle_blog_show', { 'id': blog.id, 'slug': blog.slug }) }}">Continuer la lecture...</a></p>
             </div>
 
             <footer class="meta">
