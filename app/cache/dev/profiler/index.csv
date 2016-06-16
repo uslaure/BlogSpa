@@ -1084,3 +1084,13 @@ f1532a,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_pat
 e1354c,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086423,78dcd2,200
 2f4fea,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086424,78dcd2,200
 78dcd2,::1,GET,http://localhost/SymfonyBlog/web/app_dev.php/,1466086424,,200
+ed4cb6,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086589,24fd0c,200
+671234,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086589,24fd0c,200
+f7a99c,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086589,24fd0c,200
+c016b4,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086589,24fd0c,200
+24fd0c,::1,GET,http://localhost/SymfonyBlog/web/app_dev.php/,1466086589,,200
+e3541f,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086670,900577,200
+13e4f3,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086670,900577,200
+b6dc0c,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086670,900577,200
+26f7ec,127.0.0.1,GET,http://localhost/SymfonyBlog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBlogSpaUserBundle%253AComment%253Anew,1466086670,900577,200
+900577,::1,GET,http://localhost/SymfonyBlog/web/app_dev.php/,1466086670,,200

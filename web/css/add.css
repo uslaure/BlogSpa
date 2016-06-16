@@ -69,11 +69,11 @@ form.form-comment {
 }
 input#comment_user {
     float: right;
-    width: 55%;
+    width: 56%;
 }
 textarea#comment_comment {
     width: 100%;
-    height: 60px;
+    height: 60px;   
 }
 input[type="submit"] {
     float: right;
