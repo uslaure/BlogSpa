@@ -27,6 +27,11 @@ article {
 .article-title { 
 	color: black;
 }
+.article-title:hover {
+	text-decoration: none;
+	color: black;
+}
+
 .logoSPA {
 	margin-left: 400px;
 }
@@ -52,4 +57,35 @@ h3 {
 	text-align: center;
 	padding-top: 10px;
 	text-transform: uppercase;
+}
+.comments { clear: both; background-color: red; }
+.comments .odd { background: #eee; }
+.comments .comment { padding: 20px; }
+.comments .comment p { margin-bottom: 0; }
+.comments h3 { background: #eee; padding: 10px; font-size: 20px; margin-bottom: 20px; clear: both; }
+.comments .previous-comments { margin-bottom: 20px; }
+form.form-comment {
+    float: left;
+}
+input#comment_user {
+    float: right;
+    width: 55%;
+}
+textarea#comment_comment {
+    width: 100%;
+    height: 60px;
+}
+input[type="submit"] {
+    float: right;
+    background-color: #eb641a;
+    border:none;
+    color: #ffffff;
+    font-size: 16px;
+}
+.block-comment {
+    float: right;
+}
+label.required {
+    color: #eb641a;
+    font-size: 19px;
 }

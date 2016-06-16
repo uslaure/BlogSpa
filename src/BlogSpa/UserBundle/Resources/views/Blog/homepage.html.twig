@@ -14,12 +14,24 @@
                 <p>{{ blog.blog(500) }}</p>
                 <p class="continue"><a class="continue-reading "href="{{ path('BloggerBlogBundle_blog_show', { 'id': blog.id, 'slug': blog.slug }) }}">Continuer la lecture...</a></p>
             </div>
-
-            <footer class="meta">
-                <p>Posted by <span class="highlight">{{ blog.author }}</span> at {{ blog.created|date('h:iA') }}</p>
-                <p>Tags: <span class="highlight">{{ blog.tags }}</span></p>
-            </footer>
-        </article>
+    {% if comments is defined %}
+           <article class="comment {{ cycle(['odd', 'even'], loop.index0) }}" id="comment-{{ comment.id }}">
+        <header>
+            <p><span class="highlight">{{ comment.user }}</span> commented <time datetime="{{ comment.created|date('c') }}">{{ comment.created|date('l, F j, Y') }}</time></p>
+        </header>
+        <p>{{ comment.comment }}</p>
+    </article>
+{% else %}
+<div class="block-comment">
+<h3>Ajouter un commentaire</h3><br>
+     {{ render(controller( 'BlogSpaUserBundle:Comment:new', { 'blog_id': blog.id } )) }}
+</div>
+        {% endif %} 
+        <footer class="meta">
+            <p>Commentaires: <a href="{{ path('BloggerBlogBundle_blog_show', { 'id': blog.id }) }}#comments">{{ blog.comments|length }}</a></p>
+            <p>Postés par <span class="highlight">{{ blog.author }}</span> at {{ blog.created|date('h:iA') }}</p>
+            <p>Tags: <span class="highlight">{{ blog.tags }}</span></p>
+        </footer>
     </div>
     {% else %}
     {% endfor %}

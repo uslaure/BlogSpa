@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new BlogSpa\UserBundle\BlogSpaUserBundle(),
             // new FOS\UserBundle\FOSUserBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            // new Symfony\Bundle\DoctrineMigrationsBundle\DoctrineMigrationsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

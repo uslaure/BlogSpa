@@ -4,10 +4,13 @@
 namespace BlogSpa\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
- * @ORM\Entity
+  * @ORM\Entity(repositoryClass="BlogSpa\UserBundle\Repository\BlogRepository")
  * @ORM\Table(name="blog")
+  * @ORM\HasLifecycleCallbacks()
  */
 class Blog
 {
@@ -31,7 +34,7 @@ class Blog
     /**
      * @ORM\Column(type="text")
      */
-    protected $blog;
+    protected $blog; 
 
     /**
      * @ORM\Column(type="string", length=20)
@@ -48,7 +51,9 @@ class Blog
      */
     protected $slug;
 
-
+    /**
+        * @ORM\OneToMany(targetEntity="Comment", mappedBy="blog")
+    */
     protected $comments;
 
     public function addComment(Comment $comment)
@@ -59,6 +64,14 @@ class Blog
     public function getComments()
     {
         return $this->comments;
+    }
+
+    public function __construct()
+    {
+        $this->comments = new ArrayCollection();
+
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
     }
 
 
@@ -260,5 +273,18 @@ class Blog
         $this->slug = $slug;
     }
 
+    public function __toString()
+    {
+    return $this->getTitle();
+    }
 
+    /**
+     * Remove comment
+     *
+     * @param \BlogSpa\UserBundle\Entity\Comment $comment
+     */
+    public function removeComment(\BlogSpa\UserBundle\Entity\Comment $comment)
+    {
+        $this->comments->removeElement($comment);
+    }
 }

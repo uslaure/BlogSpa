@@ -18,6 +18,7 @@ class BlogController extends Controller
 
         return $this->render("BlogSpaUserBundle:Blog:homepage.html.twig", [
             "blogs" => $blogs,
+            // "comments" => $comments
         ]);
     }
 
@@ -32,11 +33,15 @@ class BlogController extends Controller
             throw $this->createNotFoundException('Unable to find Blog post.');
         }
 
+        $comments = $em->getRepository('BlogSpaUserBundle:Comment')
+                   ->getCommentsForBlog($blog->getId());
+
         // $comments = $em->getRepository('BlogSpaUserBundle:Comment')
         //                ->getCommentsForBlog($blog->getId());
-
+        var_dump($comments);         
         return $this->render('BlogSpaUserBundle:Blog:show.html.twig', array(
             'blog'      => $blog,
+            'comments'  => $comments
             // 'comments'  => $comments
         ));
 //        return $this->render('BlogSpaUserBundle:Blog:show.html.twig', array('id' => '16'));

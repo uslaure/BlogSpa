@@ -4,11 +4,13 @@ namespace BlogSpa\UserBundle\DataFixtures\ORM;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use BlogSpa\UserBundle\Entity\Blog;
+use Doctrine\Common\DataFixtures\AbstractFixture;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 
-Class BlogFixtures implements FixtureInterface {
+Class BlogFixtures extends AbstractFixture implements OrderedFixtureInterface {
 
 	public function load(ObjectManager $manager) {
-		$blog1 = new Blog();
+        $blog1 = new Blog();
         $blog1->setTitle('Qu\'est-ce-que la SPA ?');
         $blog1->setBlog('La Société protectrice des animaux ou S.P.A. est une association privée créée en 1845 et est reconnue d\'utilité publique en 1860.
 
@@ -84,5 +86,15 @@ Sentiment de colère : Avec la colère, le corps s\'élève, le poil se dresse, 
         // $manager->persist($blog5);
 
         $manager->flush();
-	}
+        $this->addReference('blog-1', $blog1);
+        $this->addReference('blog-2', $blog2);
+        $this->addReference('blog-3', $blog3);
+        $this->addReference('blog-4', $blog4);
+        $this->addReference('blog-5', $blog5);
+        }
+
+    public function getOrder()
+    {
+        return 1;
+    }
 }
